@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Bucket</title>
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+    <header>
+        <h1 id="typing-title"></h1>
+    </header>
+
+    <section class="banner">
+        <img src="banner.png" alt="Tab Bucket Banner">
+    </section>
+
+    <section class="links">
+        <table>
+            <tr>
+                <td><a href="[Chrome Store Link]" target="_blank">Chrome Store</a></td>
+            </tr>
+            <!-- <tr>
+                <td><a href="[Other Link 1]" target="_blank">Link 1</a></td>
+            </tr>
+            <tr>
+                <td><a href="[Other Link 2]" target="_blank">Link 2</a></td>
+            </tr> -->
+            </table>
+    </section>
+</section>
+<section>
+    <section class="description">
+        <canvas id="background"></canvas>
+        <h2>Key Features</h2>
+        <ul id="features-list">
+            </ul>
+    </section>
+</section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+<script>
+    
+    // Initialize the particles background
+    tsParticles.load("background", {
+      fullScreen: { enable: true, zIndex: -1 },
+      particles: {
+        number: { value: 60 },
+        color: { value: ["#007bff", "#ff6f61", "#00c896"] },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 4 },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: {
+        events: { onHover: { enable: true, mode: "repulse" } },
+        modes: { repulse: { distance: 100 } }
+      }
+    });
+  </script>
+</html>
